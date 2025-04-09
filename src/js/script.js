@@ -1,6 +1,10 @@
 let cartBtn = document.getElementById('cart-btn');
 let cartModal = document.getElementById('cart-modal')
 let closeModalBtn = document.getElementById('close-modal-btn')
+let cart = [];
+let cartCount = document.getElementById('cart-count');
+let cartItems = document.getElementById('cart-items');
+let cartTotal = document.getElementById('cart-total');
 
 cartBtn.addEventListener('click', () => {
     cartModal.classList.remove("hidden")
@@ -10,10 +14,6 @@ closeModalBtn.addEventListener('click', () => {
     cartModal.classList.add("hidden")
 })
 
-let cart = [];
-let cartCount = document.getElementById('cart-count');
-let cartItems = document.getElementById('cart-items');
-let cartTotal = document.getElementById('cart-total');
 
 function updateCart() {
     cartCount.textContent = cart.length;
