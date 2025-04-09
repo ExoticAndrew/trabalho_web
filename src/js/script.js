@@ -5,6 +5,7 @@ let cart = [];
 let cartCount = document.getElementById('cart-count');
 let cartItems = document.getElementById('cart-items');
 let cartTotal = document.getElementById('cart-total');
+let addItensBtns = document.querySelectorAll('.add-to-card-btn');
 
 cartBtn.addEventListener('click', () => {
     cartModal.classList.remove("hidden")
@@ -34,7 +35,7 @@ function updateCart() {
     cartTotal.textContent = total.toFixed(2);
 }
 
-document.querySelectorAll('.add-to-card-btn').forEach(button => {
+addItensBtns.forEach(button => {
     button.addEventListener('click', () => {
         const name = button.getAttribute('data-name');
         const price = parseFloat(button.getAttribute('data-price'));
