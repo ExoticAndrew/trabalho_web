@@ -6,6 +6,10 @@ let cartCount = document.getElementById('cart-count');
 let cartItems = document.getElementById('cart-items');
 let cartTotal = document.getElementById('cart-total');
 let addItensBtns = document.querySelectorAll('.add-to-card-btn');
+let checkoutBtn = document.getElementById('checkout-btn');
+let checkoutModal = document.getElementById('checkout-modal')
+let cancelCheckoutBtn = document.getElementById('cancel-checkout-btn');
+let finishBtn = document.getElementById('finish-checkout-btn');
 
 cartBtn.addEventListener('click', () => {
     cartModal.classList.remove("hidden")
@@ -50,3 +54,18 @@ addItensBtns.forEach(button => {
         updateCart();
     });
 });
+
+checkoutBtn.addEventListener('click', () => {
+    cartModal.classList.add("hidden")
+    checkoutModal.classList.remove("hidden")
+})
+
+cancelCheckoutBtn.addEventListener('click', () => {
+    checkoutModal.classList.add("hidden");
+    cartModal.classList.remove("hidden")
+});
+
+finishBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    alert('Pedido Finalizado com Sucesso!')
+})

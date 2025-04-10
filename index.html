@@ -214,6 +214,26 @@
 
     </div>
 
+    <div id="checkout-modal" class="bg-black/60 w-full h-full z-[99] top-0 left-0 fixed items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Finalizar Pedido</h2>
+            <form id="checkout-form" class="flex flex-col gap-4">
+                <input type="text" placeholder="Nome Completo" class="border rounded p-2" required>
+                <input type="email" placeholder="Email" class="border rounded p-2" required>
+                <input type="tel" placeholder="Telefone" class="border rounded p-2" required>
+                <input type="text" placeholder="Endereço" class="border rounded p-2" required>
+                <input type="text" placeholder="Número" class="border rounded p-2" required>
+                <input type="text" placeholder="Complemento" class="border rounded p-2">
+                <input type="text" placeholder="Bairro" class="border rounded p-2" required>
+                <input type="text" placeholder="CEP" class="border rounded p-2" required>
+                <div class="flex justify-between mt-3">
+                    <button type="button" id="cancel-checkout-btn">Voltar</button>
+                    <button type="submit" id="finish-checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Confirmar Pedido</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <footer class="w-full bg-red-500 py-2.5 fixed bottom-0 z-10 flex items-center justify-center">
         <button class="text-white font-bold gap-2" id="cart-btn">
             (<span id="cart-count">0</span>)
