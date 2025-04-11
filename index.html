@@ -20,7 +20,7 @@
 <body class="bg-white">
     <header class="w-full h-96">
         <div class="w-full h-full flex flex-col justify-center items-center">
-            <img src="assets/hamb-logo.webp" alt="logo" class="h-32 w-32 rounded-full shadow-lg" />
+            <img src="/assets/logomundo.jpg" alt="logo" class="h-32 w-32 rounded-full shadow-lg" />
             <h1 class="text-3xl mt-4 mb-2 font-bold font text-white">Podrão dos Devs</h1>
             <span class="text-sm text-white">Av. Tomaz Landin, 1991, RN</span>
 
@@ -195,7 +195,8 @@
 
     </div>
 
-    <div id="cart-modal" class="bg-black/60 w-full h-full z-[99] top-0 left-0 fixed items-center justify-center hidden">
+    <div id="cart-modal" class="bg-black/60 w-full h-full z-[99] top-0 left-0 fixed flex items-center justify-center hidden">
+
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
@@ -215,7 +216,8 @@
 
     </div>
 
-    <div id="checkout-modal" class="bg-black/60 w-full h-full z-[99] top-0 left-0 fixed items-center justify-center hidden">
+    <div id="checkout-modal" class="bg-black/60 w-full h-full z-[99] top-0 left-0 fixed flex items-center justify-center hidden">
+
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Finalizar Pedido</h2>
             <form id="checkout-form" class="flex flex-col gap-4">
@@ -235,7 +237,7 @@
         </div>
     </div>
 
-    <footer class="w-full bg-red-500 py-2.5 fixed bottom-0 z-10 flex items-center justify-center">
+    <footer class="w-full bg-red-500 py-2.0 fixed bottom-0 z-10 flex items-center justify-center">
         <button class="text-white font-bold gap-2" id="cart-btn">
             (<span id="cart-count">0</span>)
             veja meu carrinho
